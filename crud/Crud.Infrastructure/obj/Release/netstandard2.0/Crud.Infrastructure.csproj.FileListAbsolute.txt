@@ -1,0 +1,4 @@
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Infrastructure\bin\Release\netstandard2.0\Crud.Core.dll
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Infrastructure\obj\Release\netstandard2.0\Crud.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Infrastructure\obj\Release\netstandard2.0\Crud.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Infrastructure\obj\Release\netstandard2.0\Crud.Infrastructure.AssemblyInfo.cs

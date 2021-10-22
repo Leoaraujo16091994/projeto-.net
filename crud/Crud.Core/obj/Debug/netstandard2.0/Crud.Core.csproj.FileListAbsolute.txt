@@ -1,0 +1,9 @@
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Core\bin\Debug\netstandard2.0\Crud.Core.deps.json
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Core\bin\Debug\netstandard2.0\Crud.Core.dll
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Core\bin\Debug\netstandard2.0\Crud.Core.pdb
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Core\obj\Debug\netstandard2.0\Crud.Core.csprojAssemblyReference.cache
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Core\obj\Debug\netstandard2.0\Crud.Core.csproj.CoreCompileInputs.cache
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Core\obj\Debug\netstandard2.0\Crud.Core.AssemblyInfoInputs.cache
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Core\obj\Debug\netstandard2.0\Crud.Core.AssemblyInfo.cs
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Core\obj\Debug\netstandard2.0\Crud.Core.dll
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Core\obj\Debug\netstandard2.0\Crud.Core.pdb

@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "Hb8OPxg/Xs7ynaIqceVemsBz2R0FUpKGWfJKqvyUeQTmZBG1EpequAM5Fm6QarWoKiAuPCMTEiJBvDhsUQAQTQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Josafa\\Desktop\\projeto .Net Core\\projeto-.net\\crud\\Crud.Core\\Crud.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Josafa\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
+    "C:\\Users\\Josafa\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
+    "C:\\Users\\Josafa\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Josafa\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Josafa\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Josafa\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\Josafa\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.7.0\\system.reflection.emit.ilgeneration.4.7.0.nupkg.sha512",
+    "C:\\Users\\Josafa\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

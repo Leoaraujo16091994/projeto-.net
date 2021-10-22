@@ -1,0 +1,9 @@
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Migrations\bin\Debug\netcoreapp3.1\Crud.Migrations.deps.json
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Migrations\bin\Debug\netcoreapp3.1\Crud.Migrations.dll
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Migrations\bin\Debug\netcoreapp3.1\Crud.Migrations.pdb
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Migrations\obj\Debug\netcoreapp3.1\Crud.Migrations.csprojAssemblyReference.cache
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Migrations\obj\Debug\netcoreapp3.1\Crud.Migrations.csproj.CoreCompileInputs.cache
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Migrations\obj\Debug\netcoreapp3.1\Crud.Migrations.AssemblyInfoInputs.cache
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Migrations\obj\Debug\netcoreapp3.1\Crud.Migrations.AssemblyInfo.cs
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Migrations\obj\Debug\netcoreapp3.1\Crud.Migrations.dll
+C:\Users\Josafa\Desktop\projeto .Net Core\projeto-.net\crud\Crud.Migrations\obj\Debug\netcoreapp3.1\Crud.Migrations.pdb
