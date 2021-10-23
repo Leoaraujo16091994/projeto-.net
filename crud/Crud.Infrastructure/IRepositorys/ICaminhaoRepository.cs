@@ -8,9 +8,9 @@ namespace Crud.Infrastructure.IRepositorys
     public interface ICaminhaoRepository 
     {
         void Insert(Caminhao caminhao);
-      /*  Caminhao Update(Caminhao caminhao);
-        IList<Caminhao> GetListaCaminhaoByFiltro(Caminhao filtro);
+        void Update(Caminhao caminhao);
+        IList<Caminhao> GetAll();
         Caminhao GetById(int id);
-        void Delete(int id); */
+        void Delete(int id); 
     }
 }

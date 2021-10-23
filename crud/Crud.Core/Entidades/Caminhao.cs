@@ -11,7 +11,7 @@ namespace Crud.Core.Entidades
         public ModeloEnum Modelo { get; set; }
         public DateTime AnoFabricacao { get; set; }
         public DateTime AnoModelo { get; set; }
-        public int? Ativo { get; set; }
+        public bool? Ativo { get; set; }
         public int? CriadoPor { get; set; }
         public DateTime DataCriacao { get; set; }
         public int? ModificacaoPor { get; set; }

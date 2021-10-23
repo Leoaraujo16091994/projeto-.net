@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Crud.Core.Entidades;
+﻿using Crud.Core.Entidades;
 using Crud.Infrastructure.IServices;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace Crud.WebApi.Controllers
 {
@@ -20,22 +16,6 @@ namespace Crud.WebApi.Controllers
             _caminhaoService = service;
         }
 
-
-
-        // GET: api/Caminhao
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET: api/Caminhao/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
         // POST: api/Caminhao
         [HttpPost]
         public void Post([FromBody] Caminhao caminhao)
@@ -44,15 +24,32 @@ namespace Crud.WebApi.Controllers
         }
 
         // PUT: api/Caminhao/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut]
+        public void Update([FromBody] Caminhao caminhao)
         {
+            _caminhaoService.Update(caminhao);
+        }
+        
+        // GET: api/Caminhao
+        [HttpGet]
+        public IList<Caminhao> GetAll()
+        {
+            return _caminhaoService.GetAll();
+
+        }
+
+        // GET: api/Caminhao/5
+        [HttpGet("{id}")]
+        public Caminhao GetById(int id)
+        {
+            return _caminhaoService.GetById(id);
         }
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            _caminhaoService.Delete(id);
         }
     }
 }

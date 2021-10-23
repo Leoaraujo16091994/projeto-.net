@@ -4,6 +4,65 @@
     "C:\\Users\\Josafa\\Desktop\\projeto .Net Core\\projeto-.net\\crud\\Crud.Infrastructure.Test\\Crud.Infrastructure.Test.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Josafa\\Desktop\\projeto .Net Core\\projeto-.net\\crud\\Crud.Core\\Crud.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Josafa\\Desktop\\projeto .Net Core\\projeto-.net\\crud\\Crud.Core\\Crud.Core.csproj",
+        "projectName": "Crud.Core",
+        "projectPath": "C:\\Users\\Josafa\\Desktop\\projeto .Net Core\\projeto-.net\\crud\\Crud.Core\\Crud.Core.csproj",
+        "packagesPath": "C:\\Users\\Josafa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Josafa\\Desktop\\projeto .Net Core\\projeto-.net\\crud\\Crud.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Josafa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Josafa\\Desktop\\projeto .Net Core\\projeto-.net\\crud\\Crud.Infrastructure.Test\\Crud.Infrastructure.Test.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,7 +85,14 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Josafa\\Desktop\\projeto .Net Core\\projeto-.net\\crud\\Crud.Core\\Crud.Core.csproj": {
+                "projectPath": "C:\\Users\\Josafa\\Desktop\\projeto .Net Core\\projeto-.net\\crud\\Crud.Core\\Crud.Core.csproj"
+              },
+              "C:\\Users\\Josafa\\Desktop\\projeto .Net Core\\projeto-.net\\crud\\Crud.Infrastructure\\Crud.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Josafa\\Desktop\\projeto .Net Core\\projeto-.net\\crud\\Crud.Infrastructure\\Crud.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -41,6 +107,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.5.0, )"
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[4.2.2, )"
             },
             "coverlet.collector": {
               "target": "Package",
@@ -70,6 +140,77 @@
               "privateAssets": "all"
             }
           },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Josafa\\Desktop\\projeto .Net Core\\projeto-.net\\crud\\Crud.Infrastructure\\Crud.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Josafa\\Desktop\\projeto .Net Core\\projeto-.net\\crud\\Crud.Infrastructure\\Crud.Infrastructure.csproj",
+        "projectName": "Crud.Infrastructure",
+        "projectPath": "C:\\Users\\Josafa\\Desktop\\projeto .Net Core\\projeto-.net\\crud\\Crud.Infrastructure\\Crud.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Josafa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Josafa\\Desktop\\projeto .Net Core\\projeto-.net\\crud\\Crud.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Josafa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\Josafa\\Desktop\\projeto .Net Core\\projeto-.net\\crud\\Crud.Core\\Crud.Core.csproj": {
+                "projectPath": "C:\\Users\\Josafa\\Desktop\\projeto .Net Core\\projeto-.net\\crud\\Crud.Core\\Crud.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }

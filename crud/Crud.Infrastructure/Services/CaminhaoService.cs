@@ -1,4 +1,5 @@
 ﻿using Crud.Core.Entidades;
+using Crud.Infrastructure.Exceptions;
 using Crud.Infrastructure.IRepositorys;
 using Crud.Infrastructure.IServices;
 using System.Collections.Generic;
@@ -17,26 +18,34 @@ namespace Crud.Infrastructure.Services
 
 
         public void Insert(Caminhao caminhao)
-        {/*
-            var caminhaoJaCadastrado = _caminhaoRepository.ExisteIndicador(caminhao.Descricao);
-            if (caminhaoJaCadastrado)
-                throw new IndicadoJaExistenteException();
-                */
+        {
+            if (caminhao.Modelo != Core.Enums.ModeloEnum.FH && caminhao.Modelo != Core.Enums.ModeloEnum.FM) {
+                throw new ModeloDiferenteException("O modelo deve ser Fh ou FM");
+            }
+            if (caminhao.AnoFabricacao.Year != System.DateTime.Now.Year) {
+                throw new AnoFabricacaoInvalidoException("O ano de fabricação do caminhão deve ser o ano atual");
+            }
+
+            if (caminhao.AnoModelo.Year != System.DateTime.Now.Year &&
+                caminhao.AnoModelo.Year != System.DateTime.Now.AddYears(1).Year) {
+                throw new AnoModeloInvalidoException("O ano de modelo do caminhão deve ser o ano atual ou ano subsequente");
+            }
+
+
+
             _caminhaoRepository.Insert(caminhao);
         }
 
-        /*
-        public Caminhao Update(Caminhao caminhao)
+        
+        public void Update(Caminhao caminhao)
         {
-            _indicadorRepository.Update(indicador);
-            return indicador
+            _caminhaoRepository.Update(caminhao);
         }
-
-        public IList<Caminhao> GetListaCaminhaoByFiltro(Caminhao filtro)
+       
+        public IList<Caminhao> GetAll()
         {
-            return _caminhaoRepository.GetIndicadorByFiltro(filtro);
+            return _caminhaoRepository.GetAll();
         }
-
 
         public Caminhao GetById(int id)
         {
@@ -45,19 +54,9 @@ namespace Crud.Infrastructure.Services
 
 
 
-        public void Delete(Caminhao caminhao)
+        public void Delete(int id)
         {
-      
-                if (indicador.Ativo == true)
-                {
-                    _indicadorRepository.Inativar(indicador);
-                }
-                else
-                {
-
-                    _indicadorRepository.Ativar(indicador);
-                }
+            _caminhaoRepository.Delete(id);
         }
-    */
     }
 }
