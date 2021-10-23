@@ -5,7 +5,6 @@ using System.Collections.Generic;
 
 namespace Crud.WebApi.Controllers
 {
-    //[Route("api/[controller]")]
     [Route("/caminhao")]
     [ApiController]
     public class CaminhaoController : ControllerBase
@@ -16,21 +15,18 @@ namespace Crud.WebApi.Controllers
             _caminhaoService = service;
         }
 
-        // POST: api/Caminhao
         [HttpPost]
         public void Post([FromBody] Caminhao caminhao)
         {
             _caminhaoService.Insert(caminhao);
         }
 
-        // PUT: api/Caminhao/5
         [HttpPut]
         public void Update([FromBody] Caminhao caminhao)
         {
             _caminhaoService.Update(caminhao);
         }
         
-        // GET: api/Caminhao
         [HttpGet]
         public IList<Caminhao> GetAll()
         {
@@ -38,14 +34,13 @@ namespace Crud.WebApi.Controllers
 
         }
 
-        // GET: api/Caminhao/5
         [HttpGet("{id}")]
         public Caminhao GetById(int id)
         {
             return _caminhaoService.GetById(id);
         }
 
-        // DELETE: api/ApiWithActions/5
+        
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

@@ -31,8 +31,6 @@ namespace Crud.Infrastructure.Services
                 throw new AnoModeloInvalidoException("O ano de modelo do caminhão deve ser o ano atual ou ano subsequente");
             }
 
-
-
             _caminhaoRepository.Insert(caminhao);
         }
 
@@ -51,8 +49,6 @@ namespace Crud.Infrastructure.Services
         {
             return _caminhaoRepository.GetById(id);
         }
-
-
 
         public void Delete(int id)
         {

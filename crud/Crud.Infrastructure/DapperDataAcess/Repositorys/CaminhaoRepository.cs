@@ -5,7 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Text;
 
 namespace Crud.Infrastructure.DapperDataAcess.Repositorys
 {
@@ -51,7 +50,6 @@ namespace Crud.Infrastructure.DapperDataAcess.Repositorys
 
         public void Update(Caminhao caminhao)
         {
-            //var currentUser = _currentUserService.CurrentUserId;
             const string update = @"
                 UPDATE
                     CRUD.CAMINHAO
