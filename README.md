@@ -1,7 +1,7 @@
 # projeto-.net
 
 ## Sobre o projeto
-Projeto de uma api de caminhão feito com .netCore 3.1 ,Dapper e Sql Server; 
+Projeto de uma api e testes de caminhão feito com .netCore 3.1 ,Dapper e Sql Server; 
 
 ## Pré-Requisitos
  - .NetCore 3.1 
